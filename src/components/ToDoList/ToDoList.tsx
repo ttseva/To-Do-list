@@ -1,15 +1,19 @@
 import {ToDoListItem} from "./ToDoListItem/ToDoListItem";
 import './ToDoList.scss'
+import classes from "./ToDoList.module.scss";
 
 export const ToDoList = () => {
     return (
         <>
-            <div className="todo-container">
-                <ul className="todo-list failed">
+            <div className={classes.container}>
+                <ul className={`${classes.list} ${classes.failed}`}>
                     <ToDoListItem />
                 </ul>
                 <ul className="todo-list completed">
                     <ToDoListItem />
+
+
+
                     {/*<li className="todo-list-item__wrapper">*/}
                     {/*    <span>Вторая задача</span>*/}
                     {/*    <div className="todo-list-item__buttons">*/}
